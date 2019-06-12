@@ -1,0 +1,633 @@
+[2019-05-14 01:22:53] Asterisk 15.7.2 built by root @ 584653e75024 on a x86_64 running Linux on 2019-05-14 01:06:40 UTC
+[2019-06-08 15:34:31] Asterisk 15.7.2 built by root @ 584653e75024 on a x86_64 running Linux on 2019-05-14 01:06:40 UTC
+[2019-06-08 15:34:32] NOTICE[659] loader.c: 6 modules will be loaded.
+[2019-06-08 15:34:32] WARNING[659] loader.c: Error loading module 'chan_local.so': /usr/lib/asterisk/modules/chan_local.so: cannot open shared object file: No such file or directory
+[2019-06-08 15:34:32] NOTICE[659] res_odbc.c: Registered ODBC class 'asteriskcdrdb' dsn->[MySQL-asteriskcdrdb]
+[2019-06-08 15:34:32] WARNING[659] pbx.c: Extension 's' priority 13 in 'macro-user-logon', label 'gotpass' already in use at priority 9
+[2019-06-08 15:34:32] WARNING[659] pbx.c: Context 'from-did-direct' tries to include nonexistent context 'ext-findmefollow'
+[2019-06-08 15:34:32] WARNING[659] pbx.c: Context 'from-internal-xfer' tries to include nonexistent context 'from-internal-custom'
+[2019-06-08 15:34:32] WARNING[659] pbx.c: Context 'from-internal-noxfer' tries to include nonexistent context 'from-internal-noxfer-custom'
+[2019-06-08 15:34:32] WARNING[659] pbx.c: Context 'from-pstn' tries to include nonexistent context 'from-pstn-custom'
+[2019-06-11 23:00:56] VERBOSE[1945] res_pjsip/pjsip_options.c: Contact 101/sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db has been deleted
+[2019-06-11 23:00:56] VERBOSE[1945] res_pjsip/pjsip_configuration.c: Endpoint 101 is now Unreachable
+[2019-06-11 23:00:56] VERBOSE[1199] res_pjsip_registrar.c: Added contact 'sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db' to AOR '101' with expiration of 60 seconds
+[2019-06-11 23:00:56] VERBOSE[1199] res_pjsip/pjsip_configuration.c: Endpoint 101 is now Reachable
+[2019-06-11 23:00:56] VERBOSE[1199] res_pjsip/pjsip_options.c: Contact 101/sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db is now Reachable.  RTT: 7.503 msec
+[2019-06-11 23:01:09] VERBOSE[1199] pbx_variables.c: Setting global variable 'SIPDOMAIN' to '192.168.0.20'
+[2019-06-11 23:01:09] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184
+[2019-06-11 23:01:09] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184 in TCLASS field.
+[2019-06-11 23:01:09] VERBOSE[1199] netsock2.c: Using SIP RTP Audio CoS mark 5
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [111@from-internal:1] NoOp("PJSIP/101-00000003", "Running miscapp 1: encuesta") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [111@from-internal:2] Macro("PJSIP/101-00000003", "user-callerid,") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:1] Set("PJSIP/101-00000003", "TOUCH_MONITOR=1560294069.3") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:2] Set("PJSIP/101-00000003", "AMPUSER=101") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:3] GotoIf("PJSIP/101-00000003", "0?report") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:4] ExecIf("PJSIP/101-00000003", "1?Set(REALCALLERIDNUM=101)") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:5] Set("PJSIP/101-00000003", "AMPUSER=101") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:6] GotoIf("PJSIP/101-00000003", "0?limit") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:7] Set("PJSIP/101-00000003", "AMPUSERCIDNAME=bibiana") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:8] ExecIf("PJSIP/101-00000003", "0?Set(__CIDMASQUERADING=TRUE)") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:9] GotoIf("PJSIP/101-00000003", "0?report") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:10] Set("PJSIP/101-00000003", "AMPUSERCID=101") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:11] Set("PJSIP/101-00000003", "__DIAL_OPTIONS=HhTtr") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:12] Set("PJSIP/101-00000003", "CALLERID(all)="bibiana" <101>") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:13] GotoIf("PJSIP/101-00000003", "0?limit") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:14] ExecIf("PJSIP/101-00000003", "0?Set(GROUP(concurrency_limit)=101)") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:15] NoOp("PJSIP/101-00000003", "Macro Depth is 1") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:16] GotoIf("PJSIP/101-00000003", "1?report2:macroerror") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (macro-user-callerid,s,17)
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:17] GotoIf("PJSIP/101-00000003", "0?continue") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:18] Set("PJSIP/101-00000003", "__TTL=64") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:19] GotoIf("PJSIP/101-00000003", "1?continue") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (macro-user-callerid,s,35)
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:35] Set("PJSIP/101-00000003", "CALLERID(number)=101") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:36] Set("PJSIP/101-00000003", "CALLERID(name)=bibiana") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:37] GotoIf("PJSIP/101-00000003", "0?cnum") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:38] Set("PJSIP/101-00000003", "CDR(cnam)=bibiana") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:39] Set("PJSIP/101-00000003", "CDR(cnum)=101") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@macro-user-callerid:40] Set("PJSIP/101-00000003", "CHANNEL(language)=en") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [111@from-internal:3] Goto("PJSIP/101-00000003", "ivr-1,s,1") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (ivr-1,s,1)
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:1] Set("PJSIP/101-00000003", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:2] Set("PJSIP/101-00000003", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:3] Set("PJSIP/101-00000003", "_IVR_CONTEXT_ivr-1=") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:4] Set("PJSIP/101-00000003", "_IVR_CONTEXT=ivr-1") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:5] Set("PJSIP/101-00000003", "__IVR_RETVM=") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:6] Set("PJSIP/101-00000003", "__ALERT_INFO=None") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:7] GotoIf("PJSIP/101-00000003", "0?skip") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:8] Answer("PJSIP/101-00000003", "") in new stack
+[2019-06-11 23:01:09] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:9] Wait("PJSIP/101-00000003", "1") in new stack
+[2019-06-11 23:01:10] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:10] Set("PJSIP/101-00000003", "IVR_MSG=custom/0-bienvenida") in new stack
+[2019-06-11 23:01:10] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:11] Set("PJSIP/101-00000003", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:01:10] VERBOSE[1996][C-00000004] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:01:10] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:12] ExecIf("PJSIP/101-00000003", "1?Background(custom/0-bienvenida)") in new stack
+[2019-06-11 23:01:10] VERBOSE[1996][C-00000004] file.c: <PJSIP/101-00000003> Playing 'custom/0-bienvenida.slin' (language 'en')
+[2019-06-11 23:01:16] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-1:13] WaitExten("PJSIP/101-00000003", "10,") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [1@ivr-1:1] Set("PJSIP/101-00000003", "__ivrreturn=0") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [1@ivr-1:2] Goto("PJSIP/101-00000003", "ivr-4,s,1") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (ivr-4,s,1)
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:1] Set("PJSIP/101-00000003", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:2] Set("PJSIP/101-00000003", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:3] Set("PJSIP/101-00000003", "_IVR_CONTEXT_ivr-4=ivr-1") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:4] Set("PJSIP/101-00000003", "_IVR_CONTEXT=ivr-4") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:5] Set("PJSIP/101-00000003", "__IVR_RETVM=") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:6] GotoIf("PJSIP/101-00000003", "1?skip") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (ivr-4,s,9)
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:9] Set("PJSIP/101-00000003", "IVR_MSG=custom/2-genero") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:10] Set("PJSIP/101-00000003", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-4:11] ExecIf("PJSIP/101-00000003", "1?Background(custom/2-genero)") in new stack
+[2019-06-11 23:01:19] VERBOSE[1996][C-00000004] file.c: <PJSIP/101-00000003> Playing 'custom/2-genero.slin' (language 'en')
+[2019-06-11 23:01:26] VERBOSE[1996][C-00000004] pbx.c: Executing [1@ivr-4:1] Set("PJSIP/101-00000003", "__ivrreturn=0") in new stack
+[2019-06-11 23:01:26] VERBOSE[1996][C-00000004] pbx.c: Executing [1@ivr-4:2] Goto("PJSIP/101-00000003", "app-announcement-10,s,1") in new stack
+[2019-06-11 23:01:26] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (app-announcement-10,s,1)
+[2019-06-11 23:01:26] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-10:1] GotoIf("PJSIP/101-00000003", "1?begin") in new stack
+[2019-06-11 23:01:26] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (app-announcement-10,s,4)
+[2019-06-11 23:01:26] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-10:4] NoOp("PJSIP/101-00000003", "Playing announcement Femenino") in new stack
+[2019-06-11 23:01:26] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-10:5] Playback("PJSIP/101-00000003", "custom/2-1-femenino,noanswer") in new stack
+[2019-06-11 23:01:26] VERBOSE[1996][C-00000004] file.c: <PJSIP/101-00000003> Playing 'custom/2-1-femenino.slin' (language 'en')
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-10:6] Goto("PJSIP/101-00000003", "ivr-3,s,1") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (ivr-3,s,1)
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:1] Set("PJSIP/101-00000003", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:2] Set("PJSIP/101-00000003", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:3] Set("PJSIP/101-00000003", "_IVR_CONTEXT_ivr-3=ivr-4") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:4] Set("PJSIP/101-00000003", "_IVR_CONTEXT=ivr-3") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:5] Set("PJSIP/101-00000003", "__IVR_RETVM=") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:6] GotoIf("PJSIP/101-00000003", "1?skip") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (ivr-3,s,9)
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:9] Set("PJSIP/101-00000003", "IVR_MSG=custom/1-2-edades") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:10] Set("PJSIP/101-00000003", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-3:11] ExecIf("PJSIP/101-00000003", "1?Background(custom/1-2-edades)") in new stack
+[2019-06-11 23:01:27] VERBOSE[1996][C-00000004] file.c: <PJSIP/101-00000003> Playing 'custom/1-2-edades.slin' (language 'en')
+[2019-06-11 23:01:32] VERBOSE[1996][C-00000004] pbx.c: Executing [1@ivr-3:1] Set("PJSIP/101-00000003", "__ivrreturn=0") in new stack
+[2019-06-11 23:01:32] VERBOSE[1996][C-00000004] pbx.c: Executing [1@ivr-3:2] Goto("PJSIP/101-00000003", "app-announcement-3,s,1") in new stack
+[2019-06-11 23:01:32] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (app-announcement-3,s,1)
+[2019-06-11 23:01:32] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-3:1] GotoIf("PJSIP/101-00000003", "1?begin") in new stack
+[2019-06-11 23:01:32] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (app-announcement-3,s,4)
+[2019-06-11 23:01:32] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-3:4] NoOp("PJSIP/101-00000003", "Playing announcement 18-21") in new stack
+[2019-06-11 23:01:32] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-3:5] Playback("PJSIP/101-00000003", "custom/1-3-18-21,noanswer") in new stack
+[2019-06-11 23:01:32] VERBOSE[1996][C-00000004] file.c: <PJSIP/101-00000003> Playing 'custom/1-3-18-21.slin' (language 'en')
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-3:6] Goto("PJSIP/101-00000003", "ivr-2,s,1") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (ivr-2,s,1)
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:1] Set("PJSIP/101-00000003", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:2] Set("PJSIP/101-00000003", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:3] Set("PJSIP/101-00000003", "_IVR_CONTEXT_ivr-2=ivr-3") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:4] Set("PJSIP/101-00000003", "_IVR_CONTEXT=ivr-2") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:5] Set("PJSIP/101-00000003", "__IVR_RETVM=") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:6] GotoIf("PJSIP/101-00000003", "1?skip") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (ivr-2,s,9)
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:9] Set("PJSIP/101-00000003", "IVR_MSG=custom/3-sabores") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:10] Set("PJSIP/101-00000003", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] pbx.c: Executing [s@ivr-2:11] ExecIf("PJSIP/101-00000003", "1?Background(custom/3-sabores)") in new stack
+[2019-06-11 23:01:35] VERBOSE[1996][C-00000004] file.c: <PJSIP/101-00000003> Playing 'custom/3-sabores.slin' (language 'en')
+[2019-06-11 23:01:38] VERBOSE[1996][C-00000004] pbx.c: Executing [1@ivr-2:1] Set("PJSIP/101-00000003", "__ivrreturn=0") in new stack
+[2019-06-11 23:01:38] VERBOSE[1996][C-00000004] pbx.c: Executing [1@ivr-2:2] Goto("PJSIP/101-00000003", "app-announcement-6,s,1") in new stack
+[2019-06-11 23:01:38] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (app-announcement-6,s,1)
+[2019-06-11 23:01:38] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-6:1] GotoIf("PJSIP/101-00000003", "1?begin") in new stack
+[2019-06-11 23:01:38] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (app-announcement-6,s,4)
+[2019-06-11 23:01:38] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-6:4] NoOp("PJSIP/101-00000003", "Playing announcement Chocolate") in new stack
+[2019-06-11 23:01:38] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-6:5] Playback("PJSIP/101-00000003", "custom/3-1-chocolate,noanswer") in new stack
+[2019-06-11 23:01:38] VERBOSE[1996][C-00000004] file.c: <PJSIP/101-00000003> Playing 'custom/3-1-chocolate.slin' (language 'en')
+[2019-06-11 23:01:43] VERBOSE[1996][C-00000004] pbx.c: Executing [s@app-announcement-6:6] Goto("PJSIP/101-00000003", "app-blackhole,hangup,1") in new stack
+[2019-06-11 23:01:43] VERBOSE[1996][C-00000004] pbx_builtins.c: Goto (app-blackhole,hangup,1)
+[2019-06-11 23:01:43] VERBOSE[1996][C-00000004] pbx.c: Executing [hangup@app-blackhole:1] NoOp("PJSIP/101-00000003", "Blackhole Dest: Hangup") in new stack
+[2019-06-11 23:01:43] VERBOSE[1996][C-00000004] pbx.c: Executing [hangup@app-blackhole:2] Hangup("PJSIP/101-00000003", "") in new stack
+[2019-06-11 23:01:43] VERBOSE[1996][C-00000004] pbx.c: Spawn extension (app-blackhole, hangup, 2) exited non-zero on 'PJSIP/101-00000003'
+[2019-06-11 23:01:52] VERBOSE[1199] pbx_variables.c: Setting global variable 'SIPDOMAIN' to '192.168.0.20'
+[2019-06-11 23:01:52] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184
+[2019-06-11 23:01:52] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184 in TCLASS field.
+[2019-06-11 23:01:52] VERBOSE[1199] netsock2.c: Using SIP RTP Audio CoS mark 5
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [111@from-internal:1] NoOp("PJSIP/101-00000004", "Running miscapp 1: encuesta") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [111@from-internal:2] Macro("PJSIP/101-00000004", "user-callerid,") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:1] Set("PJSIP/101-00000004", "TOUCH_MONITOR=1560294112.4") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:2] Set("PJSIP/101-00000004", "AMPUSER=101") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:3] GotoIf("PJSIP/101-00000004", "0?report") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:4] ExecIf("PJSIP/101-00000004", "1?Set(REALCALLERIDNUM=101)") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:5] Set("PJSIP/101-00000004", "AMPUSER=101") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:6] GotoIf("PJSIP/101-00000004", "0?limit") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:7] Set("PJSIP/101-00000004", "AMPUSERCIDNAME=bibiana") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:8] ExecIf("PJSIP/101-00000004", "0?Set(__CIDMASQUERADING=TRUE)") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:9] GotoIf("PJSIP/101-00000004", "0?report") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:10] Set("PJSIP/101-00000004", "AMPUSERCID=101") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:11] Set("PJSIP/101-00000004", "__DIAL_OPTIONS=HhTtr") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:12] Set("PJSIP/101-00000004", "CALLERID(all)="bibiana" <101>") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:13] GotoIf("PJSIP/101-00000004", "0?limit") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:14] ExecIf("PJSIP/101-00000004", "0?Set(GROUP(concurrency_limit)=101)") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:15] NoOp("PJSIP/101-00000004", "Macro Depth is 1") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:16] GotoIf("PJSIP/101-00000004", "1?report2:macroerror") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (macro-user-callerid,s,17)
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:17] GotoIf("PJSIP/101-00000004", "0?continue") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:18] Set("PJSIP/101-00000004", "__TTL=64") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:19] GotoIf("PJSIP/101-00000004", "1?continue") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (macro-user-callerid,s,35)
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:35] Set("PJSIP/101-00000004", "CALLERID(number)=101") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:36] Set("PJSIP/101-00000004", "CALLERID(name)=bibiana") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:37] GotoIf("PJSIP/101-00000004", "0?cnum") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:38] Set("PJSIP/101-00000004", "CDR(cnam)=bibiana") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:39] Set("PJSIP/101-00000004", "CDR(cnum)=101") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@macro-user-callerid:40] Set("PJSIP/101-00000004", "CHANNEL(language)=en") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [111@from-internal:3] Goto("PJSIP/101-00000004", "ivr-1,s,1") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (ivr-1,s,1)
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:1] Set("PJSIP/101-00000004", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:2] Set("PJSIP/101-00000004", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:3] Set("PJSIP/101-00000004", "_IVR_CONTEXT_ivr-1=") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:4] Set("PJSIP/101-00000004", "_IVR_CONTEXT=ivr-1") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:5] Set("PJSIP/101-00000004", "__IVR_RETVM=") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:6] Set("PJSIP/101-00000004", "__ALERT_INFO=None") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:7] GotoIf("PJSIP/101-00000004", "0?skip") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:8] Answer("PJSIP/101-00000004", "") in new stack
+[2019-06-11 23:01:52] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:9] Wait("PJSIP/101-00000004", "1") in new stack
+[2019-06-11 23:01:53] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:10] Set("PJSIP/101-00000004", "IVR_MSG=custom/0-bienvenida") in new stack
+[2019-06-11 23:01:53] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:11] Set("PJSIP/101-00000004", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:01:53] VERBOSE[2032][C-00000005] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:01:53] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:12] ExecIf("PJSIP/101-00000004", "1?Background(custom/0-bienvenida)") in new stack
+[2019-06-11 23:01:53] VERBOSE[2032][C-00000005] file.c: <PJSIP/101-00000004> Playing 'custom/0-bienvenida.slin' (language 'en')
+[2019-06-11 23:02:00] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-1:13] WaitExten("PJSIP/101-00000004", "10,") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [1@ivr-1:1] Set("PJSIP/101-00000004", "__ivrreturn=0") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [1@ivr-1:2] Goto("PJSIP/101-00000004", "ivr-4,s,1") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (ivr-4,s,1)
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:1] Set("PJSIP/101-00000004", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:2] Set("PJSIP/101-00000004", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:3] Set("PJSIP/101-00000004", "_IVR_CONTEXT_ivr-4=ivr-1") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:4] Set("PJSIP/101-00000004", "_IVR_CONTEXT=ivr-4") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:5] Set("PJSIP/101-00000004", "__IVR_RETVM=") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:6] GotoIf("PJSIP/101-00000004", "1?skip") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (ivr-4,s,9)
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:9] Set("PJSIP/101-00000004", "IVR_MSG=custom/2-genero") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:10] Set("PJSIP/101-00000004", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-4:11] ExecIf("PJSIP/101-00000004", "1?Background(custom/2-genero)") in new stack
+[2019-06-11 23:02:02] VERBOSE[2032][C-00000005] file.c: <PJSIP/101-00000004> Playing 'custom/2-genero.slin' (language 'en')
+[2019-06-11 23:02:06] VERBOSE[2032][C-00000005] pbx.c: Executing [1@ivr-4:1] Set("PJSIP/101-00000004", "__ivrreturn=0") in new stack
+[2019-06-11 23:02:06] VERBOSE[2032][C-00000005] pbx.c: Executing [1@ivr-4:2] Goto("PJSIP/101-00000004", "app-announcement-10,s,1") in new stack
+[2019-06-11 23:02:06] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (app-announcement-10,s,1)
+[2019-06-11 23:02:06] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-10:1] GotoIf("PJSIP/101-00000004", "1?begin") in new stack
+[2019-06-11 23:02:06] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (app-announcement-10,s,4)
+[2019-06-11 23:02:06] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-10:4] NoOp("PJSIP/101-00000004", "Playing announcement Femenino") in new stack
+[2019-06-11 23:02:06] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-10:5] Playback("PJSIP/101-00000004", "custom/2-1-femenino,noanswer") in new stack
+[2019-06-11 23:02:06] VERBOSE[2032][C-00000005] file.c: <PJSIP/101-00000004> Playing 'custom/2-1-femenino.slin' (language 'en')
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-10:6] Goto("PJSIP/101-00000004", "ivr-3,s,1") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (ivr-3,s,1)
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:1] Set("PJSIP/101-00000004", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:2] Set("PJSIP/101-00000004", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:3] Set("PJSIP/101-00000004", "_IVR_CONTEXT_ivr-3=ivr-4") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:4] Set("PJSIP/101-00000004", "_IVR_CONTEXT=ivr-3") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:5] Set("PJSIP/101-00000004", "__IVR_RETVM=") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:6] GotoIf("PJSIP/101-00000004", "1?skip") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (ivr-3,s,9)
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:9] Set("PJSIP/101-00000004", "IVR_MSG=custom/1-2-edades") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:10] Set("PJSIP/101-00000004", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-3:11] ExecIf("PJSIP/101-00000004", "1?Background(custom/1-2-edades)") in new stack
+[2019-06-11 23:02:07] VERBOSE[2032][C-00000005] file.c: <PJSIP/101-00000004> Playing 'custom/1-2-edades.slin' (language 'en')
+[2019-06-11 23:02:10] VERBOSE[2032][C-00000005] pbx.c: Executing [1@ivr-3:1] Set("PJSIP/101-00000004", "__ivrreturn=0") in new stack
+[2019-06-11 23:02:10] VERBOSE[2032][C-00000005] pbx.c: Executing [1@ivr-3:2] Goto("PJSIP/101-00000004", "app-announcement-3,s,1") in new stack
+[2019-06-11 23:02:10] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (app-announcement-3,s,1)
+[2019-06-11 23:02:10] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-3:1] GotoIf("PJSIP/101-00000004", "1?begin") in new stack
+[2019-06-11 23:02:10] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (app-announcement-3,s,4)
+[2019-06-11 23:02:10] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-3:4] NoOp("PJSIP/101-00000004", "Playing announcement 18-21") in new stack
+[2019-06-11 23:02:10] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-3:5] Playback("PJSIP/101-00000004", "custom/1-3-18-21,noanswer") in new stack
+[2019-06-11 23:02:10] VERBOSE[2032][C-00000005] file.c: <PJSIP/101-00000004> Playing 'custom/1-3-18-21.slin' (language 'en')
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-3:6] Goto("PJSIP/101-00000004", "ivr-2,s,1") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (ivr-2,s,1)
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:1] Set("PJSIP/101-00000004", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:2] Set("PJSIP/101-00000004", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:3] Set("PJSIP/101-00000004", "_IVR_CONTEXT_ivr-2=ivr-3") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:4] Set("PJSIP/101-00000004", "_IVR_CONTEXT=ivr-2") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:5] Set("PJSIP/101-00000004", "__IVR_RETVM=") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:6] GotoIf("PJSIP/101-00000004", "1?skip") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (ivr-2,s,9)
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:9] Set("PJSIP/101-00000004", "IVR_MSG=custom/3-sabores") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:10] Set("PJSIP/101-00000004", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] pbx.c: Executing [s@ivr-2:11] ExecIf("PJSIP/101-00000004", "1?Background(custom/3-sabores)") in new stack
+[2019-06-11 23:02:13] VERBOSE[2032][C-00000005] file.c: <PJSIP/101-00000004> Playing 'custom/3-sabores.slin' (language 'en')
+[2019-06-11 23:02:14] VERBOSE[2032][C-00000005] pbx.c: Executing [1@ivr-2:1] Set("PJSIP/101-00000004", "__ivrreturn=0") in new stack
+[2019-06-11 23:02:14] VERBOSE[2032][C-00000005] pbx.c: Executing [1@ivr-2:2] Goto("PJSIP/101-00000004", "app-announcement-6,s,1") in new stack
+[2019-06-11 23:02:14] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (app-announcement-6,s,1)
+[2019-06-11 23:02:14] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-6:1] GotoIf("PJSIP/101-00000004", "1?begin") in new stack
+[2019-06-11 23:02:14] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (app-announcement-6,s,4)
+[2019-06-11 23:02:14] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-6:4] NoOp("PJSIP/101-00000004", "Playing announcement Chocolate") in new stack
+[2019-06-11 23:02:14] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-6:5] Playback("PJSIP/101-00000004", "custom/3-1-chocolate,noanswer") in new stack
+[2019-06-11 23:02:14] VERBOSE[2032][C-00000005] file.c: <PJSIP/101-00000004> Playing 'custom/3-1-chocolate.slin' (language 'en')
+[2019-06-11 23:02:19] VERBOSE[2032][C-00000005] pbx.c: Executing [s@app-announcement-6:6] Goto("PJSIP/101-00000004", "app-blackhole,hangup,1") in new stack
+[2019-06-11 23:02:19] VERBOSE[2032][C-00000005] pbx_builtins.c: Goto (app-blackhole,hangup,1)
+[2019-06-11 23:02:19] VERBOSE[2032][C-00000005] pbx.c: Executing [hangup@app-blackhole:1] NoOp("PJSIP/101-00000004", "Blackhole Dest: Hangup") in new stack
+[2019-06-11 23:02:19] VERBOSE[2032][C-00000005] pbx.c: Executing [hangup@app-blackhole:2] Hangup("PJSIP/101-00000004", "") in new stack
+[2019-06-11 23:02:19] VERBOSE[2032][C-00000005] pbx.c: Spawn extension (app-blackhole, hangup, 2) exited non-zero on 'PJSIP/101-00000004'
+[2019-06-11 23:02:28] VERBOSE[1199] pbx_variables.c: Setting global variable 'SIPDOMAIN' to '192.168.0.20'
+[2019-06-11 23:02:28] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184
+[2019-06-11 23:02:28] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184 in TCLASS field.
+[2019-06-11 23:02:28] VERBOSE[1199] netsock2.c: Using SIP RTP Audio CoS mark 5
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [111@from-internal:1] NoOp("PJSIP/101-00000005", "Running miscapp 1: encuesta") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [111@from-internal:2] Macro("PJSIP/101-00000005", "user-callerid,") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:1] Set("PJSIP/101-00000005", "TOUCH_MONITOR=1560294148.5") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:2] Set("PJSIP/101-00000005", "AMPUSER=101") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:3] GotoIf("PJSIP/101-00000005", "0?report") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:4] ExecIf("PJSIP/101-00000005", "1?Set(REALCALLERIDNUM=101)") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:5] Set("PJSIP/101-00000005", "AMPUSER=101") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:6] GotoIf("PJSIP/101-00000005", "0?limit") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:7] Set("PJSIP/101-00000005", "AMPUSERCIDNAME=bibiana") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:8] ExecIf("PJSIP/101-00000005", "0?Set(__CIDMASQUERADING=TRUE)") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:9] GotoIf("PJSIP/101-00000005", "0?report") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:10] Set("PJSIP/101-00000005", "AMPUSERCID=101") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:11] Set("PJSIP/101-00000005", "__DIAL_OPTIONS=HhTtr") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:12] Set("PJSIP/101-00000005", "CALLERID(all)="bibiana" <101>") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:13] GotoIf("PJSIP/101-00000005", "0?limit") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:14] ExecIf("PJSIP/101-00000005", "0?Set(GROUP(concurrency_limit)=101)") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:15] NoOp("PJSIP/101-00000005", "Macro Depth is 1") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:16] GotoIf("PJSIP/101-00000005", "1?report2:macroerror") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (macro-user-callerid,s,17)
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:17] GotoIf("PJSIP/101-00000005", "0?continue") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:18] Set("PJSIP/101-00000005", "__TTL=64") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:19] GotoIf("PJSIP/101-00000005", "1?continue") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (macro-user-callerid,s,35)
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:35] Set("PJSIP/101-00000005", "CALLERID(number)=101") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:36] Set("PJSIP/101-00000005", "CALLERID(name)=bibiana") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:37] GotoIf("PJSIP/101-00000005", "0?cnum") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:38] Set("PJSIP/101-00000005", "CDR(cnam)=bibiana") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:39] Set("PJSIP/101-00000005", "CDR(cnum)=101") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@macro-user-callerid:40] Set("PJSIP/101-00000005", "CHANNEL(language)=en") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [111@from-internal:3] Goto("PJSIP/101-00000005", "ivr-1,s,1") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (ivr-1,s,1)
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:1] Set("PJSIP/101-00000005", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:2] Set("PJSIP/101-00000005", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:3] Set("PJSIP/101-00000005", "_IVR_CONTEXT_ivr-1=") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:4] Set("PJSIP/101-00000005", "_IVR_CONTEXT=ivr-1") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:5] Set("PJSIP/101-00000005", "__IVR_RETVM=") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:6] Set("PJSIP/101-00000005", "__ALERT_INFO=None") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:7] GotoIf("PJSIP/101-00000005", "0?skip") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:8] Answer("PJSIP/101-00000005", "") in new stack
+[2019-06-11 23:02:28] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:9] Wait("PJSIP/101-00000005", "1") in new stack
+[2019-06-11 23:02:29] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:10] Set("PJSIP/101-00000005", "IVR_MSG=custom/0-bienvenida") in new stack
+[2019-06-11 23:02:29] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:11] Set("PJSIP/101-00000005", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:02:29] VERBOSE[2057][C-00000006] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:02:29] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-1:12] ExecIf("PJSIP/101-00000005", "1?Background(custom/0-bienvenida)") in new stack
+[2019-06-11 23:02:29] VERBOSE[2057][C-00000006] file.c: <PJSIP/101-00000005> Playing 'custom/0-bienvenida.slin' (language 'en')
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [1@ivr-1:1] Set("PJSIP/101-00000005", "__ivrreturn=0") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [1@ivr-1:2] Goto("PJSIP/101-00000005", "ivr-4,s,1") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (ivr-4,s,1)
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:1] Set("PJSIP/101-00000005", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:2] Set("PJSIP/101-00000005", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:3] Set("PJSIP/101-00000005", "_IVR_CONTEXT_ivr-4=ivr-1") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:4] Set("PJSIP/101-00000005", "_IVR_CONTEXT=ivr-4") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:5] Set("PJSIP/101-00000005", "__IVR_RETVM=") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:6] GotoIf("PJSIP/101-00000005", "1?skip") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (ivr-4,s,9)
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:9] Set("PJSIP/101-00000005", "IVR_MSG=custom/2-genero") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:10] Set("PJSIP/101-00000005", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-4:11] ExecIf("PJSIP/101-00000005", "1?Background(custom/2-genero)") in new stack
+[2019-06-11 23:02:34] VERBOSE[2057][C-00000006] file.c: <PJSIP/101-00000005> Playing 'custom/2-genero.slin' (language 'en')
+[2019-06-11 23:02:37] VERBOSE[2057][C-00000006] pbx.c: Executing [2@ivr-4:1] Set("PJSIP/101-00000005", "__ivrreturn=0") in new stack
+[2019-06-11 23:02:37] VERBOSE[2057][C-00000006] pbx.c: Executing [2@ivr-4:2] Goto("PJSIP/101-00000005", "app-announcement-11,s,1") in new stack
+[2019-06-11 23:02:37] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (app-announcement-11,s,1)
+[2019-06-11 23:02:37] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-11:1] GotoIf("PJSIP/101-00000005", "1?begin") in new stack
+[2019-06-11 23:02:37] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (app-announcement-11,s,4)
+[2019-06-11 23:02:37] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-11:4] NoOp("PJSIP/101-00000005", "Playing announcement Masculino") in new stack
+[2019-06-11 23:02:37] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-11:5] Playback("PJSIP/101-00000005", "custom/2-1-masculino,noanswer") in new stack
+[2019-06-11 23:02:37] VERBOSE[2057][C-00000006] file.c: <PJSIP/101-00000005> Playing 'custom/2-1-masculino.slin' (language 'en')
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-11:6] Goto("PJSIP/101-00000005", "ivr-3,s,1") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (ivr-3,s,1)
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:1] Set("PJSIP/101-00000005", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:2] Set("PJSIP/101-00000005", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:3] Set("PJSIP/101-00000005", "_IVR_CONTEXT_ivr-3=ivr-4") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:4] Set("PJSIP/101-00000005", "_IVR_CONTEXT=ivr-3") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:5] Set("PJSIP/101-00000005", "__IVR_RETVM=") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:6] GotoIf("PJSIP/101-00000005", "1?skip") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (ivr-3,s,9)
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:9] Set("PJSIP/101-00000005", "IVR_MSG=custom/1-2-edades") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:10] Set("PJSIP/101-00000005", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-3:11] ExecIf("PJSIP/101-00000005", "1?Background(custom/1-2-edades)") in new stack
+[2019-06-11 23:02:39] VERBOSE[2057][C-00000006] file.c: <PJSIP/101-00000005> Playing 'custom/1-2-edades.slin' (language 'en')
+[2019-06-11 23:02:40] VERBOSE[2057][C-00000006] pbx.c: Executing [2@ivr-3:1] Set("PJSIP/101-00000005", "__ivrreturn=0") in new stack
+[2019-06-11 23:02:40] VERBOSE[2057][C-00000006] pbx.c: Executing [2@ivr-3:2] Goto("PJSIP/101-00000005", "app-announcement-4,s,1") in new stack
+[2019-06-11 23:02:40] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (app-announcement-4,s,1)
+[2019-06-11 23:02:40] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-4:1] GotoIf("PJSIP/101-00000005", "1?begin") in new stack
+[2019-06-11 23:02:40] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (app-announcement-4,s,4)
+[2019-06-11 23:02:40] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-4:4] NoOp("PJSIP/101-00000005", "Playing announcement 21-30") in new stack
+[2019-06-11 23:02:40] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-4:5] Playback("PJSIP/101-00000005", "custom/1-3-21-30,noanswer") in new stack
+[2019-06-11 23:02:40] VERBOSE[2057][C-00000006] file.c: <PJSIP/101-00000005> Playing 'custom/1-3-21-30.slin' (language 'en')
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-4:6] Goto("PJSIP/101-00000005", "ivr-2,s,1") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (ivr-2,s,1)
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:1] Set("PJSIP/101-00000005", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:2] Set("PJSIP/101-00000005", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:3] Set("PJSIP/101-00000005", "_IVR_CONTEXT_ivr-2=ivr-3") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:4] Set("PJSIP/101-00000005", "_IVR_CONTEXT=ivr-2") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:5] Set("PJSIP/101-00000005", "__IVR_RETVM=") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:6] GotoIf("PJSIP/101-00000005", "1?skip") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (ivr-2,s,9)
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:9] Set("PJSIP/101-00000005", "IVR_MSG=custom/3-sabores") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:10] Set("PJSIP/101-00000005", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] pbx.c: Executing [s@ivr-2:11] ExecIf("PJSIP/101-00000005", "1?Background(custom/3-sabores)") in new stack
+[2019-06-11 23:02:42] VERBOSE[2057][C-00000006] file.c: <PJSIP/101-00000005> Playing 'custom/3-sabores.slin' (language 'en')
+[2019-06-11 23:02:44] VERBOSE[2057][C-00000006] pbx.c: Executing [2@ivr-2:1] Set("PJSIP/101-00000005", "__ivrreturn=0") in new stack
+[2019-06-11 23:02:44] VERBOSE[2057][C-00000006] pbx.c: Executing [2@ivr-2:2] Goto("PJSIP/101-00000005", "app-announcement-8,s,1") in new stack
+[2019-06-11 23:02:44] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (app-announcement-8,s,1)
+[2019-06-11 23:02:44] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-8:1] GotoIf("PJSIP/101-00000005", "1?begin") in new stack
+[2019-06-11 23:02:44] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (app-announcement-8,s,4)
+[2019-06-11 23:02:44] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-8:4] NoOp("PJSIP/101-00000005", "Playing announcement Crema") in new stack
+[2019-06-11 23:02:44] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-8:5] Playback("PJSIP/101-00000005", "custom/3-1-crema-granizada,noanswer") in new stack
+[2019-06-11 23:02:44] VERBOSE[2057][C-00000006] file.c: <PJSIP/101-00000005> Playing 'custom/3-1-crema-granizada.slin' (language 'en')
+[2019-06-11 23:02:50] VERBOSE[2057][C-00000006] pbx.c: Executing [s@app-announcement-8:6] Goto("PJSIP/101-00000005", "app-blackhole,hangup,1") in new stack
+[2019-06-11 23:02:50] VERBOSE[2057][C-00000006] pbx_builtins.c: Goto (app-blackhole,hangup,1)
+[2019-06-11 23:02:50] VERBOSE[2057][C-00000006] pbx.c: Executing [hangup@app-blackhole:1] NoOp("PJSIP/101-00000005", "Blackhole Dest: Hangup") in new stack
+[2019-06-11 23:02:50] VERBOSE[2057][C-00000006] pbx.c: Executing [hangup@app-blackhole:2] Hangup("PJSIP/101-00000005", "") in new stack
+[2019-06-11 23:02:50] VERBOSE[2057][C-00000006] pbx.c: Spawn extension (app-blackhole, hangup, 2) exited non-zero on 'PJSIP/101-00000005'
+[2019-06-11 23:03:02] VERBOSE[1199] pbx_variables.c: Setting global variable 'SIPDOMAIN' to '192.168.0.20'
+[2019-06-11 23:03:02] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184
+[2019-06-11 23:03:02] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184 in TCLASS field.
+[2019-06-11 23:03:02] VERBOSE[1199] netsock2.c: Using SIP RTP Audio CoS mark 5
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [111@from-internal:1] NoOp("PJSIP/101-00000006", "Running miscapp 1: encuesta") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [111@from-internal:2] Macro("PJSIP/101-00000006", "user-callerid,") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:1] Set("PJSIP/101-00000006", "TOUCH_MONITOR=1560294182.6") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:2] Set("PJSIP/101-00000006", "AMPUSER=101") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:3] GotoIf("PJSIP/101-00000006", "0?report") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:4] ExecIf("PJSIP/101-00000006", "1?Set(REALCALLERIDNUM=101)") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:5] Set("PJSIP/101-00000006", "AMPUSER=101") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:6] GotoIf("PJSIP/101-00000006", "0?limit") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:7] Set("PJSIP/101-00000006", "AMPUSERCIDNAME=bibiana") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:8] ExecIf("PJSIP/101-00000006", "0?Set(__CIDMASQUERADING=TRUE)") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:9] GotoIf("PJSIP/101-00000006", "0?report") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:10] Set("PJSIP/101-00000006", "AMPUSERCID=101") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:11] Set("PJSIP/101-00000006", "__DIAL_OPTIONS=HhTtr") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:12] Set("PJSIP/101-00000006", "CALLERID(all)="bibiana" <101>") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:13] GotoIf("PJSIP/101-00000006", "0?limit") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:14] ExecIf("PJSIP/101-00000006", "0?Set(GROUP(concurrency_limit)=101)") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:15] NoOp("PJSIP/101-00000006", "Macro Depth is 1") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:16] GotoIf("PJSIP/101-00000006", "1?report2:macroerror") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (macro-user-callerid,s,17)
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:17] GotoIf("PJSIP/101-00000006", "0?continue") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:18] Set("PJSIP/101-00000006", "__TTL=64") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:19] GotoIf("PJSIP/101-00000006", "1?continue") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (macro-user-callerid,s,35)
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:35] Set("PJSIP/101-00000006", "CALLERID(number)=101") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:36] Set("PJSIP/101-00000006", "CALLERID(name)=bibiana") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:37] GotoIf("PJSIP/101-00000006", "0?cnum") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:38] Set("PJSIP/101-00000006", "CDR(cnam)=bibiana") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:39] Set("PJSIP/101-00000006", "CDR(cnum)=101") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@macro-user-callerid:40] Set("PJSIP/101-00000006", "CHANNEL(language)=en") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [111@from-internal:3] Goto("PJSIP/101-00000006", "ivr-1,s,1") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (ivr-1,s,1)
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:1] Set("PJSIP/101-00000006", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:2] Set("PJSIP/101-00000006", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:3] Set("PJSIP/101-00000006", "_IVR_CONTEXT_ivr-1=") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:4] Set("PJSIP/101-00000006", "_IVR_CONTEXT=ivr-1") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:5] Set("PJSIP/101-00000006", "__IVR_RETVM=") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:6] Set("PJSIP/101-00000006", "__ALERT_INFO=None") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:7] GotoIf("PJSIP/101-00000006", "0?skip") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:8] Answer("PJSIP/101-00000006", "") in new stack
+[2019-06-11 23:03:02] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:9] Wait("PJSIP/101-00000006", "1") in new stack
+[2019-06-11 23:03:03] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:10] Set("PJSIP/101-00000006", "IVR_MSG=custom/0-bienvenida") in new stack
+[2019-06-11 23:03:03] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:11] Set("PJSIP/101-00000006", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:03:03] VERBOSE[2058][C-00000007] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:03:03] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:12] ExecIf("PJSIP/101-00000006", "1?Background(custom/0-bienvenida)") in new stack
+[2019-06-11 23:03:03] VERBOSE[2058][C-00000007] file.c: <PJSIP/101-00000006> Playing 'custom/0-bienvenida.slin' (language 'en')
+[2019-06-11 23:03:09] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-1:13] WaitExten("PJSIP/101-00000006", "10,") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [1@ivr-1:1] Set("PJSIP/101-00000006", "__ivrreturn=0") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [1@ivr-1:2] Goto("PJSIP/101-00000006", "ivr-4,s,1") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (ivr-4,s,1)
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:1] Set("PJSIP/101-00000006", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:2] Set("PJSIP/101-00000006", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:3] Set("PJSIP/101-00000006", "_IVR_CONTEXT_ivr-4=ivr-1") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:4] Set("PJSIP/101-00000006", "_IVR_CONTEXT=ivr-4") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:5] Set("PJSIP/101-00000006", "__IVR_RETVM=") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:6] GotoIf("PJSIP/101-00000006", "1?skip") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (ivr-4,s,9)
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:9] Set("PJSIP/101-00000006", "IVR_MSG=custom/2-genero") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:10] Set("PJSIP/101-00000006", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-4:11] ExecIf("PJSIP/101-00000006", "1?Background(custom/2-genero)") in new stack
+[2019-06-11 23:03:10] VERBOSE[2058][C-00000007] file.c: <PJSIP/101-00000006> Playing 'custom/2-genero.slin' (language 'en')
+[2019-06-11 23:03:14] VERBOSE[2058][C-00000007] pbx.c: Executing [2@ivr-4:1] Set("PJSIP/101-00000006", "__ivrreturn=0") in new stack
+[2019-06-11 23:03:14] VERBOSE[2058][C-00000007] pbx.c: Executing [2@ivr-4:2] Goto("PJSIP/101-00000006", "app-announcement-11,s,1") in new stack
+[2019-06-11 23:03:14] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (app-announcement-11,s,1)
+[2019-06-11 23:03:14] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-11:1] GotoIf("PJSIP/101-00000006", "1?begin") in new stack
+[2019-06-11 23:03:14] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (app-announcement-11,s,4)
+[2019-06-11 23:03:14] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-11:4] NoOp("PJSIP/101-00000006", "Playing announcement Masculino") in new stack
+[2019-06-11 23:03:14] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-11:5] Playback("PJSIP/101-00000006", "custom/2-1-masculino,noanswer") in new stack
+[2019-06-11 23:03:14] VERBOSE[2058][C-00000007] file.c: <PJSIP/101-00000006> Playing 'custom/2-1-masculino.slin' (language 'en')
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-11:6] Goto("PJSIP/101-00000006", "ivr-3,s,1") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (ivr-3,s,1)
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:1] Set("PJSIP/101-00000006", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:2] Set("PJSIP/101-00000006", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:3] Set("PJSIP/101-00000006", "_IVR_CONTEXT_ivr-3=ivr-4") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:4] Set("PJSIP/101-00000006", "_IVR_CONTEXT=ivr-3") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:5] Set("PJSIP/101-00000006", "__IVR_RETVM=") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:6] GotoIf("PJSIP/101-00000006", "1?skip") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (ivr-3,s,9)
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:9] Set("PJSIP/101-00000006", "IVR_MSG=custom/1-2-edades") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:10] Set("PJSIP/101-00000006", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-3:11] ExecIf("PJSIP/101-00000006", "1?Background(custom/1-2-edades)") in new stack
+[2019-06-11 23:03:15] VERBOSE[2058][C-00000007] file.c: <PJSIP/101-00000006> Playing 'custom/1-2-edades.slin' (language 'en')
+[2019-06-11 23:03:18] VERBOSE[2058][C-00000007] pbx.c: Executing [2@ivr-3:1] Set("PJSIP/101-00000006", "__ivrreturn=0") in new stack
+[2019-06-11 23:03:18] VERBOSE[2058][C-00000007] pbx.c: Executing [2@ivr-3:2] Goto("PJSIP/101-00000006", "app-announcement-4,s,1") in new stack
+[2019-06-11 23:03:18] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (app-announcement-4,s,1)
+[2019-06-11 23:03:18] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-4:1] GotoIf("PJSIP/101-00000006", "1?begin") in new stack
+[2019-06-11 23:03:18] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (app-announcement-4,s,4)
+[2019-06-11 23:03:18] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-4:4] NoOp("PJSIP/101-00000006", "Playing announcement 21-30") in new stack
+[2019-06-11 23:03:18] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-4:5] Playback("PJSIP/101-00000006", "custom/1-3-21-30,noanswer") in new stack
+[2019-06-11 23:03:18] VERBOSE[2058][C-00000007] file.c: <PJSIP/101-00000006> Playing 'custom/1-3-21-30.slin' (language 'en')
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-4:6] Goto("PJSIP/101-00000006", "ivr-2,s,1") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (ivr-2,s,1)
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:1] Set("PJSIP/101-00000006", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:2] Set("PJSIP/101-00000006", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:3] Set("PJSIP/101-00000006", "_IVR_CONTEXT_ivr-2=ivr-3") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:4] Set("PJSIP/101-00000006", "_IVR_CONTEXT=ivr-2") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:5] Set("PJSIP/101-00000006", "__IVR_RETVM=") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:6] GotoIf("PJSIP/101-00000006", "1?skip") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (ivr-2,s,9)
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:9] Set("PJSIP/101-00000006", "IVR_MSG=custom/3-sabores") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:10] Set("PJSIP/101-00000006", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] pbx.c: Executing [s@ivr-2:11] ExecIf("PJSIP/101-00000006", "1?Background(custom/3-sabores)") in new stack
+[2019-06-11 23:03:21] VERBOSE[2058][C-00000007] file.c: <PJSIP/101-00000006> Playing 'custom/3-sabores.slin' (language 'en')
+[2019-06-11 23:03:25] VERBOSE[2058][C-00000007] pbx.c: Executing [3@ivr-2:1] Set("PJSIP/101-00000006", "__ivrreturn=0") in new stack
+[2019-06-11 23:03:25] VERBOSE[2058][C-00000007] pbx.c: Executing [3@ivr-2:2] Goto("PJSIP/101-00000006", "app-announcement-7,s,1") in new stack
+[2019-06-11 23:03:25] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (app-announcement-7,s,1)
+[2019-06-11 23:03:25] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-7:1] GotoIf("PJSIP/101-00000006", "1?begin") in new stack
+[2019-06-11 23:03:25] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (app-announcement-7,s,4)
+[2019-06-11 23:03:25] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-7:4] NoOp("PJSIP/101-00000006", "Playing announcement Frutilla") in new stack
+[2019-06-11 23:03:25] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-7:5] Playback("PJSIP/101-00000006", "custom/3-1-frutilla,noanswer") in new stack
+[2019-06-11 23:03:25] VERBOSE[2058][C-00000007] file.c: <PJSIP/101-00000006> Playing 'custom/3-1-frutilla.slin' (language 'en')
+[2019-06-11 23:03:31] VERBOSE[2058][C-00000007] pbx.c: Executing [s@app-announcement-7:6] Goto("PJSIP/101-00000006", "app-blackhole,hangup,1") in new stack
+[2019-06-11 23:03:31] VERBOSE[2058][C-00000007] pbx_builtins.c: Goto (app-blackhole,hangup,1)
+[2019-06-11 23:03:31] VERBOSE[2058][C-00000007] pbx.c: Executing [hangup@app-blackhole:1] NoOp("PJSIP/101-00000006", "Blackhole Dest: Hangup") in new stack
+[2019-06-11 23:03:31] VERBOSE[2058][C-00000007] pbx.c: Executing [hangup@app-blackhole:2] Hangup("PJSIP/101-00000006", "") in new stack
+[2019-06-11 23:03:31] VERBOSE[2058][C-00000007] pbx.c: Spawn extension (app-blackhole, hangup, 2) exited non-zero on 'PJSIP/101-00000006'
+[2019-06-11 23:03:42] VERBOSE[1199] pbx_variables.c: Setting global variable 'SIPDOMAIN' to '192.168.0.20'
+[2019-06-11 23:03:42] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184
+[2019-06-11 23:03:42] VERBOSE[1199] netsock2.c: Using SIP RTP Audio TOS bits 184 in TCLASS field.
+[2019-06-11 23:03:42] VERBOSE[1199] netsock2.c: Using SIP RTP Audio CoS mark 5
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [111@from-internal:1] NoOp("PJSIP/101-00000007", "Running miscapp 1: encuesta") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [111@from-internal:2] Macro("PJSIP/101-00000007", "user-callerid,") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:1] Set("PJSIP/101-00000007", "TOUCH_MONITOR=1560294222.7") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:2] Set("PJSIP/101-00000007", "AMPUSER=101") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:3] GotoIf("PJSIP/101-00000007", "0?report") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:4] ExecIf("PJSIP/101-00000007", "1?Set(REALCALLERIDNUM=101)") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:5] Set("PJSIP/101-00000007", "AMPUSER=101") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:6] GotoIf("PJSIP/101-00000007", "0?limit") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:7] Set("PJSIP/101-00000007", "AMPUSERCIDNAME=bibiana") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:8] ExecIf("PJSIP/101-00000007", "0?Set(__CIDMASQUERADING=TRUE)") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:9] GotoIf("PJSIP/101-00000007", "0?report") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:10] Set("PJSIP/101-00000007", "AMPUSERCID=101") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:11] Set("PJSIP/101-00000007", "__DIAL_OPTIONS=HhTtr") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:12] Set("PJSIP/101-00000007", "CALLERID(all)="bibiana" <101>") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:13] GotoIf("PJSIP/101-00000007", "0?limit") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:14] ExecIf("PJSIP/101-00000007", "0?Set(GROUP(concurrency_limit)=101)") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:15] NoOp("PJSIP/101-00000007", "Macro Depth is 1") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:16] GotoIf("PJSIP/101-00000007", "1?report2:macroerror") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (macro-user-callerid,s,17)
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:17] GotoIf("PJSIP/101-00000007", "0?continue") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:18] Set("PJSIP/101-00000007", "__TTL=64") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:19] GotoIf("PJSIP/101-00000007", "1?continue") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (macro-user-callerid,s,35)
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:35] Set("PJSIP/101-00000007", "CALLERID(number)=101") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:36] Set("PJSIP/101-00000007", "CALLERID(name)=bibiana") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:37] GotoIf("PJSIP/101-00000007", "0?cnum") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:38] Set("PJSIP/101-00000007", "CDR(cnam)=bibiana") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:39] Set("PJSIP/101-00000007", "CDR(cnum)=101") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@macro-user-callerid:40] Set("PJSIP/101-00000007", "CHANNEL(language)=en") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [111@from-internal:3] Goto("PJSIP/101-00000007", "ivr-1,s,1") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (ivr-1,s,1)
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:1] Set("PJSIP/101-00000007", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:2] Set("PJSIP/101-00000007", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:3] Set("PJSIP/101-00000007", "_IVR_CONTEXT_ivr-1=") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:4] Set("PJSIP/101-00000007", "_IVR_CONTEXT=ivr-1") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:5] Set("PJSIP/101-00000007", "__IVR_RETVM=") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:6] Set("PJSIP/101-00000007", "__ALERT_INFO=None") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:7] GotoIf("PJSIP/101-00000007", "0?skip") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:8] Answer("PJSIP/101-00000007", "") in new stack
+[2019-06-11 23:03:42] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:9] Wait("PJSIP/101-00000007", "1") in new stack
+[2019-06-11 23:03:43] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:10] Set("PJSIP/101-00000007", "IVR_MSG=custom/0-bienvenida") in new stack
+[2019-06-11 23:03:43] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:11] Set("PJSIP/101-00000007", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:03:43] VERBOSE[2077][C-00000008] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:03:43] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-1:12] ExecIf("PJSIP/101-00000007", "1?Background(custom/0-bienvenida)") in new stack
+[2019-06-11 23:03:43] VERBOSE[2077][C-00000008] file.c: <PJSIP/101-00000007> Playing 'custom/0-bienvenida.slin' (language 'en')
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [1@ivr-1:1] Set("PJSIP/101-00000007", "__ivrreturn=0") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [1@ivr-1:2] Goto("PJSIP/101-00000007", "ivr-4,s,1") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (ivr-4,s,1)
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:1] Set("PJSIP/101-00000007", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:2] Set("PJSIP/101-00000007", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:3] Set("PJSIP/101-00000007", "_IVR_CONTEXT_ivr-4=ivr-1") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:4] Set("PJSIP/101-00000007", "_IVR_CONTEXT=ivr-4") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:5] Set("PJSIP/101-00000007", "__IVR_RETVM=") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:6] GotoIf("PJSIP/101-00000007", "1?skip") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (ivr-4,s,9)
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:9] Set("PJSIP/101-00000007", "IVR_MSG=custom/2-genero") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:10] Set("PJSIP/101-00000007", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-4:11] ExecIf("PJSIP/101-00000007", "1?Background(custom/2-genero)") in new stack
+[2019-06-11 23:03:45] VERBOSE[2077][C-00000008] file.c: <PJSIP/101-00000007> Playing 'custom/2-genero.slin' (language 'en')
+[2019-06-11 23:03:48] VERBOSE[2077][C-00000008] pbx.c: Executing [3@ivr-4:1] Set("PJSIP/101-00000007", "__ivrreturn=0") in new stack
+[2019-06-11 23:03:48] VERBOSE[2077][C-00000008] pbx.c: Executing [3@ivr-4:2] Goto("PJSIP/101-00000007", "app-announcement-12,s,1") in new stack
+[2019-06-11 23:03:48] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (app-announcement-12,s,1)
+[2019-06-11 23:03:48] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-12:1] GotoIf("PJSIP/101-00000007", "1?begin") in new stack
+[2019-06-11 23:03:48] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (app-announcement-12,s,4)
+[2019-06-11 23:03:48] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-12:4] NoOp("PJSIP/101-00000007", "Playing announcement No especifico") in new stack
+[2019-06-11 23:03:48] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-12:5] Playback("PJSIP/101-00000007", "custom/2-1-no-especifico,noanswer") in new stack
+[2019-06-11 23:03:48] VERBOSE[2077][C-00000008] file.c: <PJSIP/101-00000007> Playing 'custom/2-1-no-especifico.slin' (language 'en')
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-12:6] Goto("PJSIP/101-00000007", "ivr-3,s,1") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (ivr-3,s,1)
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:1] Set("PJSIP/101-00000007", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:2] Set("PJSIP/101-00000007", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:3] Set("PJSIP/101-00000007", "_IVR_CONTEXT_ivr-3=ivr-4") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:4] Set("PJSIP/101-00000007", "_IVR_CONTEXT=ivr-3") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:5] Set("PJSIP/101-00000007", "__IVR_RETVM=") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:6] GotoIf("PJSIP/101-00000007", "1?skip") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (ivr-3,s,9)
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:9] Set("PJSIP/101-00000007", "IVR_MSG=custom/1-2-edades") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:10] Set("PJSIP/101-00000007", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-3:11] ExecIf("PJSIP/101-00000007", "1?Background(custom/1-2-edades)") in new stack
+[2019-06-11 23:03:50] VERBOSE[2077][C-00000008] file.c: <PJSIP/101-00000007> Playing 'custom/1-2-edades.slin' (language 'en')
+[2019-06-11 23:03:53] VERBOSE[2077][C-00000008] pbx.c: Executing [3@ivr-3:1] Set("PJSIP/101-00000007", "__ivrreturn=0") in new stack
+[2019-06-11 23:03:53] VERBOSE[2077][C-00000008] pbx.c: Executing [3@ivr-3:2] Goto("PJSIP/101-00000007", "app-announcement-5,s,1") in new stack
+[2019-06-11 23:03:53] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (app-announcement-5,s,1)
+[2019-06-11 23:03:53] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-5:1] GotoIf("PJSIP/101-00000007", "1?begin") in new stack
+[2019-06-11 23:03:53] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (app-announcement-5,s,4)
+[2019-06-11 23:03:53] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-5:4] NoOp("PJSIP/101-00000007", "Playing announcement 30-40") in new stack
+[2019-06-11 23:03:53] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-5:5] Playback("PJSIP/101-00000007", "custom/1-3-30-40,noanswer") in new stack
+[2019-06-11 23:03:53] VERBOSE[2077][C-00000008] file.c: <PJSIP/101-00000007> Playing 'custom/1-3-30-40.slin' (language 'en')
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-5:6] Goto("PJSIP/101-00000007", "ivr-2,s,1") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (ivr-2,s,1)
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:1] Set("PJSIP/101-00000007", "TIMEOUT_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:2] Set("PJSIP/101-00000007", "INVALID_LOOPCOUNT=0") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:3] Set("PJSIP/101-00000007", "_IVR_CONTEXT_ivr-2=ivr-3") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:4] Set("PJSIP/101-00000007", "_IVR_CONTEXT=ivr-2") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:5] Set("PJSIP/101-00000007", "__IVR_RETVM=") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:6] GotoIf("PJSIP/101-00000007", "1?skip") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (ivr-2,s,9)
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:9] Set("PJSIP/101-00000007", "IVR_MSG=custom/3-sabores") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:10] Set("PJSIP/101-00000007", "TIMEOUT(digit)=3") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] func_timeout.c: Digit timeout set to 3.000
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] pbx.c: Executing [s@ivr-2:11] ExecIf("PJSIP/101-00000007", "1?Background(custom/3-sabores)") in new stack
+[2019-06-11 23:03:55] VERBOSE[2077][C-00000008] file.c: <PJSIP/101-00000007> Playing 'custom/3-sabores.slin' (language 'en')
+[2019-06-11 23:03:58] VERBOSE[2077][C-00000008] pbx.c: Executing [4@ivr-2:1] Set("PJSIP/101-00000007", "__ivrreturn=0") in new stack
+[2019-06-11 23:03:58] VERBOSE[2077][C-00000008] pbx.c: Executing [4@ivr-2:2] Goto("PJSIP/101-00000007", "app-announcement-9,s,1") in new stack
+[2019-06-11 23:03:58] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (app-announcement-9,s,1)
+[2019-06-11 23:03:58] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-9:1] GotoIf("PJSIP/101-00000007", "1?begin") in new stack
+[2019-06-11 23:03:58] VERBOSE[2077][C-00000008] pbx_builtins.c: Goto (app-announcement-9,s,4)
+[2019-06-11 23:03:58] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-9:4] NoOp("PJSIP/101-00000007", "Playing announcement mascarpone") in new stack
+[2019-06-11 23:03:58] VERBOSE[2077][C-00000008] pbx.c: Executing [s@app-announcement-9:5] Playback("PJSIP/101-00000007", "custom/3-1-mascarpone,noanswer") in new stack
+[2019-06-11 23:03:58] VERBOSE[2077][C-00000008] file.c: <PJSIP/101-00000007> Playing 'custom/3-1-mascarpone.slin' (language 'en')
+[2019-06-11 23:05:32] VERBOSE[2103] res_pjsip/pjsip_options.c: Contact 101/sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db has been deleted
+[2019-06-11 23:05:32] VERBOSE[2103] res_pjsip/pjsip_configuration.c: Endpoint 101 is now Unreachable
+[2019-06-11 23:05:32] VERBOSE[1199] res_pjsip_registrar.c: Added contact 'sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db' to AOR '101' with expiration of 60 seconds
+[2019-06-11 23:05:32] VERBOSE[1199] res_pjsip/pjsip_configuration.c: Endpoint 101 is now Reachable
+[2019-06-11 23:05:32] VERBOSE[1199] res_pjsip/pjsip_options.c: Contact 101/sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db is now Reachable.  RTT: 12.109 msec
+[2019-06-11 23:06:32] VERBOSE[2126] res_pjsip/pjsip_options.c: Contact 101/sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db has been deleted
+[2019-06-11 23:06:32] VERBOSE[2126] res_pjsip/pjsip_configuration.c: Endpoint 101 is now Unreachable
+[2019-06-11 23:06:33] VERBOSE[1199] res_pjsip_registrar.c: Added contact 'sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db' to AOR '101' with expiration of 60 seconds
+[2019-06-11 23:06:33] VERBOSE[1199] res_pjsip/pjsip_configuration.c: Endpoint 101 is now Reachable
+[2019-06-11 23:06:33] VERBOSE[1199] res_pjsip/pjsip_options.c: Contact 101/sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db is now Reachable.  RTT: 12.247 msec
+[2019-06-11 23:07:33] VERBOSE[2149] res_pjsip/pjsip_options.c: Contact 101/sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db has been deleted
+[2019-06-11 23:07:33] VERBOSE[2149] res_pjsip/pjsip_configuration.c: Endpoint 101 is now Unreachable
+[2019-06-11 23:07:33] VERBOSE[1199] res_pjsip_registrar.c: Added contact 'sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db' to AOR '101' with expiration of 60 seconds
+[2019-06-11 23:07:33] VERBOSE[1199] res_pjsip/pjsip_configuration.c: Endpoint 101 is now Reachable
+[2019-06-11 23:07:33] VERBOSE[1199] res_pjsip/pjsip_options.c: Contact 101/sip:101@192.168.0.19:64155;rinstance=93a45c9d190e06db is now Reachable.  RTT: 21.023 msec

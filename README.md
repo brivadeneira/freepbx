@@ -1,5 +1,7 @@
 # FreePBX on Docker
 
+This is a fork of FreePBX on Docker, with survey implemented, data adquisition and visualization, including conf files in `docs/conf`, scripts in `docs/scripts` and documentation in `docs/doc.md` (in spanish).
+
 FreePBX container image for running a complete Asterisk server.
 
 With this container you can create a telephony system in your office or house with integration among various office branches and integration to external VOIP providers with features such as call recording and IVR (interactive voice response) Menus.
@@ -68,6 +70,3 @@ network:
   * In this example suppose you have a VOIP provider in another network (10.223.x.x) connected to the Asterisk host. You can skip routes and the secondary address if not needed
 
   * Run this container
-
-  
-
